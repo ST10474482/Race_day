@@ -1,0 +1,55 @@
+name: RaceDay Part 1 Validation
+
+on:
+  push:
+    branches:
+      - main
+      - part1
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate-part1:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check RaceDay files
+        run: |
+          echo "Checking RaceDay Part 1 files..."
+
+          if [ ! -f "PROG6212.pdf" ]; then
+            echo "ERROR: PROG6212.pdf is missing!"
+            exit 1
+          fi
+
+          if [ ! -f "RaceDay.sql" ]; then
+            echo "ERROR: RaceDay.sql is missing!"
+            exit 1
+          fi
+
+          if [ ! -f "RaceDay_ERD.png" ]; then
+            echo "ERROR: RaceDay_ERD.png is missing!"
+            exit 1
+          fi
+
+          if [ ! -f "RaceDay_API_Endpoint_Plan.md" ]; then
+            echo "ERROR: RaceDay_API_Endpoint_Plan.md is missing!"
+            exit 1
+          fi
+
+          if [ ! -f "README.md" ]; then
+            echo "ERROR: README.md is missing!"
+            exit 1
+          fi
+
+          echo "All required Part 1 files are present."
+
+      - name: Part 1 validation successful
+        run: |
+          echo "RaceDay Part 1 validation completed successfully!"
