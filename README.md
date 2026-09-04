@@ -1,6 +1,6 @@
 # RaceDay Event Management System
 
-## 📌 Part 1: System Planning and Database
+##  Part 1: System Planning and Database
 
 Part 1 focuses on planning the RaceDay system before application development begins.
 
@@ -14,11 +14,11 @@ The following planning documents were created:
 
 ---
 
-# 👥 System Roles
+#  System Roles
 
 The RaceDay system supports two user roles:
 
-## 🧑‍💼 Organiser
+##  Organiser
 
 An Organiser can:
 
@@ -30,7 +30,7 @@ An Organiser can:
 - Capture participant results
 - Manage organiser information
 
-## 🏃 Participant
+##  Participant
 
 A Participant can:
 
