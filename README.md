@@ -10,7 +10,7 @@ The following planning documents were created:
 - API Endpoint Plan
 - SQL Server Database Script
 
-All planning documents are stored inside the `/docs` folder.
+
 
 ---
 
